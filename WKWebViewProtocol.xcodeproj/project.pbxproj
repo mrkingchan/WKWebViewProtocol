@@ -15,6 +15,11 @@
 		8FA67CDB209013AA003F5F0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA67CDA209013AA003F5F0D /* main.m */; };
 		8FA67CE5209013AA003F5F0D /* WKWebViewProtocolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA67CE4209013AA003F5F0D /* WKWebViewProtocolTests.m */; };
 		8FA67CF0209013AA003F5F0D /* WKWebViewProtocolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA67CEF209013AA003F5F0D /* WKWebViewProtocolUITests.m */; };
+		8FA67CFF209013D3003F5F0D /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA67CFE209013D3003F5F0D /* Protocol.m */; };
+		8FA67D0220903249003F5F0D /* NSURLProtocol+WebKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA67D0020903248003F5F0D /* NSURLProtocol+WebKitSupport.m */; };
+		8FA67D1220919D8D003F5F0D /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA67D1120919D8D003F5F0D /* Model.m */; };
+		8FA67D162091D720003F5F0D /* NextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA67D152091D720003F5F0D /* NextVC.m */; };
+		CBFC5BDF4103B158E37F2011 /* libPods-WKWebViewProtocol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 069ED46C8C3FCD2E6CC6486B /* libPods-WKWebViewProtocol.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		069ED46C8C3FCD2E6CC6486B /* libPods-WKWebViewProtocol.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WKWebViewProtocol.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9EBC35722F0B5BDD030562 /* Pods-WKWebViewProtocol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewProtocol.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewProtocol/Pods-WKWebViewProtocol.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA67CC8209013AA003F5F0D /* WKWebViewProtocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewProtocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA67CCB209013AA003F5F0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FA67CCC209013AA003F5F0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,17 @@
 		8FA67CEB209013AA003F5F0D /* WKWebViewProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebViewProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA67CEF209013AA003F5F0D /* WKWebViewProtocolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewProtocolUITests.m; sourceTree = "<group>"; };
 		8FA67CF1209013AA003F5F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA67CFD209013D3003F5F0D /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		8FA67CFE209013D3003F5F0D /* Protocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Protocol.m; sourceTree = "<group>"; };
+		8FA67D0020903248003F5F0D /* NSURLProtocol+WebKitSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+WebKitSupport.m"; sourceTree = "<group>"; };
+		8FA67D0120903249003F5F0D /* NSURLProtocol+WebKitSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+WebKitSupport.h"; sourceTree = "<group>"; };
+		8FA67D0F20919D3F003F5F0D /* IMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMessageModel.h; sourceTree = "<group>"; };
+		8FA67D1020919D8D003F5F0D /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		8FA67D1120919D8D003F5F0D /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		8FA67D132091BA1C003F5F0D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8FA67D142091D720003F5F0D /* NextVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextVC.h; sourceTree = "<group>"; };
+		8FA67D152091D720003F5F0D /* NextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextVC.m; sourceTree = "<group>"; };
+		F0A4C0D869D283FDF3194BFF /* Pods-WKWebViewProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebViewProtocol.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebViewProtocol/Pods-WKWebViewProtocol.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFC5BDF4103B158E37F2011 /* libPods-WKWebViewProtocol.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6669F8ED7CEC449BD41547C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F9EBC35722F0B5BDD030562 /* Pods-WKWebViewProtocol.debug.xcconfig */,
+				F0A4C0D869D283FDF3194BFF /* Pods-WKWebViewProtocol.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8FA67CBF209013AA003F5F0D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +113,8 @@
 				8FA67CE3209013AA003F5F0D /* WKWebViewProtocolTests */,
 				8FA67CEE209013AA003F5F0D /* WKWebViewProtocolUITests */,
 				8FA67CC9209013AA003F5F0D /* Products */,
+				6669F8ED7CEC449BD41547C6 /* Pods */,
+				9BC6B1F24951C66CBF359EE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +133,18 @@
 			children = (
 				8FA67CCB209013AA003F5F0D /* AppDelegate.h */,
 				8FA67CCC209013AA003F5F0D /* AppDelegate.m */,
+				8FA67D0F20919D3F003F5F0D /* IMessageModel.h */,
+				8FA67D1020919D8D003F5F0D /* Model.h */,
+				8FA67D1120919D8D003F5F0D /* Model.m */,
+				8FA67D0120903249003F5F0D /* NSURLProtocol+WebKitSupport.h */,
+				8FA67D0020903248003F5F0D /* NSURLProtocol+WebKitSupport.m */,
 				8FA67CCE209013AA003F5F0D /* ViewController.h */,
 				8FA67CCF209013AA003F5F0D /* ViewController.m */,
+				8FA67D142091D720003F5F0D /* NextVC.h */,
+				8FA67D152091D720003F5F0D /* NextVC.m */,
+				8FA67CFD209013D3003F5F0D /* Protocol.h */,
+				8FA67CFE209013D3003F5F0D /* Protocol.m */,
+				8FA67D132091BA1C003F5F0D /* PrefixHeader.pch */,
 				8FA67CD1209013AA003F5F0D /* Main.storyboard */,
 				8FA67CD4209013AA003F5F0D /* Assets.xcassets */,
 				8FA67CD6209013AA003F5F0D /* LaunchScreen.storyboard */,
@@ -132,6 +172,14 @@
 			path = WKWebViewProtocolUITests;
 			sourceTree = "<group>";
 		};
+		9BC6B1F24951C66CBF359EE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				069ED46C8C3FCD2E6CC6486B /* libPods-WKWebViewProtocol.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FA67CF4209013AA003F5F0D /* Build configuration list for PBXNativeTarget "WKWebViewProtocol" */;
 			buildPhases = (
+				48DB5D1C54F397A946040CE3 /* [CP] Check Pods Manifest.lock */,
 				8FA67CC4209013AA003F5F0D /* Sources */,
 				8FA67CC5209013AA003F5F0D /* Frameworks */,
 				8FA67CC6209013AA003F5F0D /* Resources */,
+				94363EA64CAAB35D07C41D39 /* [CP] Embed Pods Frameworks */,
+				B3D1832E9D4FD77DEA95A428 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +311,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48DB5D1C54F397A946040CE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WKWebViewProtocol-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94363EA64CAAB35D07C41D39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKWebViewProtocol/Pods-WKWebViewProtocol-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3D1832E9D4FD77DEA95A428 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKWebViewProtocol/Pods-WKWebViewProtocol-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FA67CC4209013AA003F5F0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8FA67CD0209013AA003F5F0D /* ViewController.m in Sources */,
+				8FA67D162091D720003F5F0D /* NextVC.m in Sources */,
 				8FA67CDB209013AA003F5F0D /* main.m in Sources */,
+				8FA67D0220903249003F5F0D /* NSURLProtocol+WebKitSupport.m in Sources */,
+				8FA67D1220919D8D003F5F0D /* Model.m in Sources */,
 				8FA67CCD209013AA003F5F0D /* AppDelegate.m in Sources */,
+				8FA67CFF209013D3003F5F0D /* Protocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,11 +534,15 @@
 		};
 		8FA67CF5209013AA003F5F0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F9EBC35722F0B5BDD030562 /* Pods-WKWebViewProtocol.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V3WGXX8M8S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WKWebViewProtocol/PrefixHeader.pch";
 				INFOPLIST_FILE = WKWebViewProtocol/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianft.WKWebViewProtocol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +552,15 @@
 		};
 		8FA67CF6209013AA003F5F0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A4C0D869D283FDF3194BFF /* Pods-WKWebViewProtocol.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V3WGXX8M8S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WKWebViewProtocol/PrefixHeader.pch";
 				INFOPLIST_FILE = WKWebViewProtocol/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianft.WKWebViewProtocol;
 				PRODUCT_NAME = "$(TARGET_NAME)";

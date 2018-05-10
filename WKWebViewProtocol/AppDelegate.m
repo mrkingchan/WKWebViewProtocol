@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import <WebKit/WebKit.h>
+#import "Protocol.h"
+#import "NSURLProtocol+WebKitSupport.h"
+#import "ViewController.h"
+@interface AppDelegate () {
+    NSURLSessionDataTask *_task;
+}
 
 @end
 
@@ -16,10 +21,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    /*
+//    Class cls = NSClassFromString(@"WKBrowsingContextController");
+    Class cls = [[[WKWebView new] valueForKey:@"browsingContextController"] class];
+    SEL sel = NSSelectorFromString(@"registerSchemeForCustomProtocol:");
+    if ([(id)cls respondsToSelector:sel]) {
+        // 把 http 和 https 请求交给 NSURLProtocol 处理
+        [(id)cls performSelector:sel withObject:@"http"];
+        [(id)cls performSelector:sel withObject:@"https"];
+    }
+    [NSURLProtocol registerClass:[Protocol class]];*/
+    [NSURLProtocol wk_registerScheme:@"http"];
+    [NSURLProtocol wk_registerScheme:@"https"];
+    
+  _task =  [[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"http://m.qianft.com:8099/app/getfilterurllist"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+       
+    }] ;
+    [_task resume];
+   NSLog(@"task HeaderFields = %@", _task.originalRequest.allHTTPHeaderFields);
+//    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    _window.backgroundColor = [UIColor whiteColor];
+//    _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+//    [_window makeKeyAndVisible];
+    
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
